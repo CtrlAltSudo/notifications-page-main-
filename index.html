@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Notifications page</title>
@@ -16,21 +18,21 @@
 </head>
 <body>
 <main>
-  <div id="container">
+  <div id="mainContainer">
     <div class="nav">
       <h1>Notifications 3</h1>
 
       <h2>Mark all as read</h2>
     </div>
-
-
-  <p>Mark Webber reacted to your recent post My first tournament today!
+<div id="secondaryContainer">
+  <p class="unread">Mark Webber reacted to your recent post My first tournament today!
   1m ago</p>
 
- <p> Angela Gray followed you
+ <p class="unread"> Angela Gray followed you
   5m ago</p>
 
-  <p>Jacob Thompson has joined your group Chess Club
+  <p class="unread">
+    <p> <span class="username">Jacob Thompson</span> has joined your group Chess Club </p>
   1 day ago</p>
 
  <p> Rizky Hasanuddin sent you a private message
@@ -46,6 +48,7 @@
 
   Anna Kim left the group Chess Club
   2 weeks ago</p>
+</div>
 </div>
 </main>
 <footer>

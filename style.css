@@ -1,7 +1,14 @@
 * {
     box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
+:root {
+    --background: hsl(0, 0%, 100%);
+    --alert: hsl(1, 90%, 64%);
+    --notifications: hsl(219, 85%, 26%);
+    --unreadBackground:  hsl(211, 68%, 94%);
 
+}
 body {
     display: flex;
     flex-direction: column;
@@ -9,10 +16,24 @@ body {
     align-items: center;
     height: 100vh;
 }
-#container {
+#mainContainer {
+    background-color: var(--background);
+    border-radius: 0.5rem;
     width: 35rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .nav {
     display: flex;
     justify-content: space-between;
+}
+#secondaryContainer {
+    padding: 2rem;
+    border: 1px solid black;
+}
+.unread {
+    background-color: var(--unreadBackground);
+}
+.username {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
 }
