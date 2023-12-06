@@ -6,7 +6,7 @@
     --background: hsl(0, 0%, 100%);
     --alert: hsl(1, 90%, 64%);
     --notifications: hsl(219, 85%, 26%);
-    --unreadBackground:  hsl(211, 68%, 94%);
+    --unreadBackground:  hsl(210, 60%, 98%);
 
 }
 body {
@@ -14,12 +14,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+/*     height: 100vh; */
 }
 #mainContainer {
     background-color: var(--background);
     border-radius: 0.5rem;
-    width: 35rem;
+    width: 40rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .nav {
@@ -37,3 +37,23 @@ body {
     color: hsl(224, 21%, 14%);
     font-weight: 800;
 }
+li {
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--unreadBackground);
+}
+.posted {
+    margin-top: 0;
+}
+h1,h2 {
+padding: 0 2rem 0 2rem;
+}
+li img {
+    width: 3rem;
+    height: auto;
+    align-self: flex-start;
+    flex-direction: row;
+}
+
