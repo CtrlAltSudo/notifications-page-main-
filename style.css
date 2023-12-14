@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
 }
 #secondaryContainer {
-    padding: 2rem;
+    padding: 0 1rem 0 1rem;
 }
 .username {
     color: hsl(224, 21%, 14%);
@@ -70,6 +70,18 @@ li {
 }
 h1,h2 {
  padding: 0 2rem 0 2rem;
+ margin-bottom: 0;
+}
+h1 {
+    font-size: 1.3rem;
+    display: flex;
+}
+.notificationCount {
+    background-color: var(--notifications);
+    padding: 2px 9px 2px 9px;
+    font-size: 13px;
+    border-radius: 0.2rem;
+    color: var(--readBackground);
 }
 li img {
     width: 2.5rem;
@@ -88,8 +100,7 @@ p {
     border-radius: 0.5rem;
 }
 
-li.unread > div:nth-child(2) > p:nth-child(1) > span:nth-child(2)::after {
-    content: '';
+.alertIcon {
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -97,5 +108,8 @@ li.unread > div:nth-child(2) > p:nth-child(1) > span:nth-child(2)::after {
     border-radius: 50%;
     margin-left: 3px;
     margin-bottom: 2px;
+    visibility: visible;
 }
-
+footer {
+    padding-top: 1rem;
+}
