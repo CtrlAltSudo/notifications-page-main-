@@ -11,6 +11,7 @@
     --readBackground: hsl(0, 0%, 100%);
     --fontColor: hsl(211, 68%, 94%);
     --highlightColor:hsl(224, 21%, 14%);
+    --boldFont: hsl(224, 21%, 14%);
 
 }
 body {
@@ -18,13 +19,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-/*     height: 100vh; */
+    min-height: 100vh; 
 }
 #mainContainer {
     background-color: var(--background);
     border-radius: 0.5rem;
-    width: 40rem;
+    width: 36rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 1rem;
 }
 .nav {
     display: flex;
@@ -34,7 +36,7 @@ body {
     padding: 0 1rem 0 1rem;
 }
 .username {
-    color: hsl(224, 21%, 14%);
+    color: var(--boldFont);
     font-weight: 800;
     padding-right: 5px;
 }
@@ -68,21 +70,32 @@ li {
     font-size: 0.8rem;
     line-height: 1.5;
 }
-h1,h2 {
- padding: 0 2rem 0 2rem;
- margin-bottom: 0;
+h2 {
+    padding-right: 2rem;
+    font-size: 0.9rem;
+    margin: 0;
+    align-self: center;
 }
 h1 {
+    padding-left: 2rem;
     font-size: 1.3rem;
-    display: flex;
+    color: var(--boldFont);
 }
+.h1Container {
+    display: flex;
+    align-items: center;
+    
+}
+
 .notificationCount {
     background-color: var(--notifications);
-    padding: 2px 9px 2px 9px;
-    font-size: 13px;
+    padding: 2px 10px 2px 10px;
+    font-size: 0.8rem;
     border-radius: 0.2rem;
     color: var(--readBackground);
+    margin-left: 0.5rem;
 }
+
 li img {
     width: 2.5rem;
     height: 2.5rem;
