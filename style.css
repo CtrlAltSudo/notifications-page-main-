@@ -61,6 +61,11 @@ li {
     gap: 1rem;
     cursor: pointer;
 }
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 .unread {
     background-color: var(--unreadBackground);
 
