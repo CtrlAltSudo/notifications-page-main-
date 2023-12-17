@@ -3,7 +3,7 @@
 <p align="center"> <a align="center" href="https://www.frontendmentor.io/solutions/notifications-page-main-Ub4Sk0iRlH">Solution Page</a><p>
 <h2 align="center">Project Screenshot<h2>
 <p align="center">
-  <img src="./images/screenshot.png" alt="project screen shot"></img>
+  <img src="./assets//images/screenshot.png" alt="project screen shot"></img>
 </p>
 
 
