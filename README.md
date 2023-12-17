@@ -16,6 +16,7 @@ This is a Frontend Mentor challenge, click the link above to visit the challenge
 <p>HTML<p>
 <p>CSS<p>
 <p>Flexbox<p>
+<p>Javascript<p>
 
 ## What I learnt 
 
